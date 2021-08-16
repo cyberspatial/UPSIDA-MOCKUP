@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPSIDA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="time">Sunday, 18 Jul, 2021 03:47:30 AM</p>
+      <div class="logo-award-container">
+        <div class="time-logo-container">
+          <div class="time-webmail-container">
+            
+            <div class="webm-off-login-container">
+              <a  class="webmail">WEBMAIL</a>
+              <a  class="off-login">
+                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;OFFICE
+                LOGIN
+              </a>
+            </div>
+          </div>
+          <div class="logo-container"></div>
+        </div>
+        <div class="award-container"></div>
+      </div>
+      <nav class="main-menu-bar">
+        <ul class="unordered-main-menu-bar">
+          <li class="nav-link-list"><a href="../../index.html" class="nav-link" >HOME</a></li>
+          <li class="nav-link-list"><a href="../../ABOUT PAGE/index.html" class="nav-link" >ABOUT</a></li>
+          <li class="nav-link-list"><a href="../../E-SERVICES/index.html"class="nav-link" >E-SERVICES</a></li>
+          <li class="nav-link-list"><a href="../../POLICIES/Index.html"class="nav-link" >POLICIES</a></li>
+          <li class="nav-link-list"><div class="resource-dropdown">
+           <a onmouseover="changeintominus()" onmouseout="changeintoplus()" class="resource">RESOURCE&nbsp;+</a>
+           <div class="resource-link-container">
+             <a  class="resource-link">Industrial Area Opearating Process</a>
+             <a class="resource-link">Office Order</a>
+             <a  class="resource-link">Operating Manual 2011</a>
+             <a  class="resource-link">Document For Approval of Building Plan</a>
+             <a  class="resource-link">Present Rates</a>
+             <a href="../../RESOURCE-CENTER/DEVELOPMENT PROCESS/index.html" class="resource-link">Development Process</a>
+             <a  class="resource-link">Conditions for Tender</a>
+             <a  class="resource-link">Allotment Application Form</a>
+             <a  class="resource-link">Service Rules</a>
+             <a  class="resource-link">By Laws Of UPSIDA</a>
+             <a   class="resource-link">Ammendment in UPSIDA Land Development & Building Regulation 2018</a>
+             <a  class="resource-link">Second Ammendment in UPSIDA Land Development</a>
+           </div>
+           </div>
+          </li>
+          <li class="nav-link-list">
+            <div class="contact-dropdown">
+              <a onmouseover="contactchangeintominus()" onmouseout="contactchangeintoplus()" class="contact">CONTACT&nbsp;+</a>
+              <div class="contact-link-container">
+                <a  class="contact-link">Head Office</a>
+                <a class="contact-link">Regional / Project Office</a>
+                <a  class="contact-link">Divisonal Office</a>
+                
+              </div>
+              </div>
+          </li>
+
+          <li class="ham-burger-menu" onclick="openNav()">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-bar-small-device" id="small-menu">
+        <div class="small-off-webmail-container">
+          <a  class="popup-webmail">WEBMAIL</a>
+          <a  class="popup-off-login">
+            OFFICE
+            LOGIN
+          </a>
+        </div>
+        <hr />
+
+        <div class="link-container">
+          <ul class="unordered-small-menu-bar">
+            <li>
+              <a href="../../index.html" class="nav-link-small">HOME</a>
+            </li>
+            <hr />
+            <li>
+              <a href="../../ABOUT PAGE/index.html" class="nav-link-small">ABOUT</a>
+            </li>
+            <hr />
+            <li>
+              <a href="../../E-SERVICES/index.html" class="nav-link-small">E-SERVICES</a>
+            </li>
+            <hr />
+            <li>
+              <a href="../../POLICIES/index.html" class="nav-link-small">POLICIES</a>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="contact-text">RESOURCE CENTER &nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkresource()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-resource">
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested">Industrial Area Opearating Process</a>
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Office Orders</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested" tagrt="_blank">Operating Manual 2011 </a>
+                </li>
+                <li class="nested-list">
+                  <a   class="nav-link-small-nested"
+                    >Document For Approval of Building Plan</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Present Rates</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a href="../../RESOURCE-CENTER/DEVELOPMENT PROCESS/index.html" class="nav-link-small-nested"
+                    >Development Process</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Conditions for Tender</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Allotment Application Form</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Service Rules</a
+                  >
+                </li>
+               
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >By Laws Of UPSIDA</a
+                  >
+                  <li class="nested-list">
+                    <a  class="nav-link-small-nested" 
+                      >Ammendment in UPSIDA Land Development & Building Regulation 2018</a
+                    >
+                </li>
+                <li class="nested-list">
+                  <a   class="nav-link-small-nested"
+                    >Second Ammendment in UPSIDA Land Development</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="contact-text">CONTACT US &nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkcontact()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-contact">
+                <li class="nested-list">
+                  <a href="#" class="nav-link-small-nested">Head office</a>
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Regional / Project Office</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested">Divisional Ofiice</a>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="imp">IMPORTANT LINKS&nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkimp()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-imp">
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested">Udyog Bandhu</a>
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >U.P. Government Official Website</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested" 
+                    >E-tender Uttar Pradesh</a
+                  >
+                </li>
+
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested" 
+                    >Nivesh Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+    <div class="head-office-container">
+
+        <h1 class="head-heading">
+             HEAD OFFICE
+        </h1>
+
+        <div class="main-content">
+
+            <div class="address-telephone-fax">
+            
+                <div class="details">
+                    <h3 class="add-tel-fax-heading"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;&nbsp;ADDRESS</h3>
+                    <p class="add-tel-fax">
+                    
+                        ABCDEF Complex, Z-3/4 Lorempur
+                        Ipsum-123456</p>
+                        
+                        <h3 class="add-tel-fax-heading"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;TELEPHONE</h3>
+                    <p class="add-tel-fax">9876543210
+                    </p>
+                        <h3 class="add-tel-fax-heading"><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;&nbsp;FAX</h3>
+                    <p class="add-tel-fax">
+                        0000-654321
+                </p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card-container">
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="contact-card">
+                    <div class="photo-container">
+
+                    </div>
+                    <div class="details-container">
+                        <table>
+                           <tr>
+                               <th>Name</th>
+                               <td>XYZ ABCD RANDOM</td>
+                           </tr>
+                           <tr>
+                            <th>Designation</th>
+                            <td>Lorem Ipsum</td>
+                        </tr>
+                        <tr>
+                            <th>Contact No.</th>
+                            <td>0123-9876541(XYZ)</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>ab@xyz.pqr</td>
+                        </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    </main>
+
+
+
+    <div class="social-container">
+        <h3 class="social-heading">FOLLOW US</h3>
+        <div class="social-media-icon-container">
+          <div class="facebook-icon">
+           <a  class="f"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          </div>
+          <div class="twitter-icon">
+          <a   class="t"><i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>
+          </div>
+        </div>
+      </div>
+  
+  
+      
+      <footer>
+        <div class="topic-container">
+          <h1 class="foot-topic-heading">IMPORTANT LINKS</h1>
+          <ul>
+            <li class="foot-list">
+              <a class="foot-topic-link" 
+                >U.P Government Official Website</a
+              >
+            </li>
+            <li class="foot-list">
+              <a class="foot-topic-link" >Udyog Bandhu</a>
+            </li>
+            <li class="foot-list">
+              <a class="foot-topic-link" >E-Tender Uttar Pradesh</a>
+            </li>
+            <li class="foot-list">
+              <a class="foot-topic-link" 
+                >Nivesh Mitra</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="foot-container">
+          <p class="credit"> Content © UPSIDA, U.P., India.
+          </p>
+          <br/>
+          <p style="color: red" class="credit">
+            This is a <em>mockup</em> website of UPSIDA which was redesigned
+            during the design-a-thon organised by UPSIDA from 7/07/2021 -
+            8/08/2021.
+          </p>
+          
+  </div>
+      </footer>
+    
+        <script src="Script/script.js"></script>
+    </body>
+  </html>
+  

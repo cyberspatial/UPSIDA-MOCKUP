@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPSIDA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <p class="time">Sunday, 18 Jul, 2021 03:47:30 AM</p>
+      <div class="logo-award-container">
+        <div class="time-logo-container">
+          <div class="time-webmail-container">
+            
+            <div class="webm-off-login-container">
+              <a  class="webmail">WEBMAIL</a>
+              <a class="off-login">
+                <i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;OFFICE
+                LOGIN
+              </a>
+            </div>
+          </div>
+          <div class="logo-container"></div>
+        </div>
+        <div class="award-container"></div>
+      </div>
+      <nav class="main-menu-bar">
+        <ul class="unordered-main-menu-bar">
+          <li class="nav-link-list"><a href="#" class="nav-link" >HOME</a></li>
+          <li class="nav-link-list"><a href="ABOUT PAGE/index.html" class="nav-link" >ABOUT</a></li>
+          <li class="nav-link-list"><a href="E-SERVICES/index.html"class="nav-link" >E-SERVICES</a></li>
+          <li class="nav-link-list"><a href="POLICIES/Index.html"class="nav-link" >POLICIES</a></li>
+          <li class="nav-link-list"><div class="resource-dropdown">
+           <a onmouseover="changeintominus()" onmouseout="changeintoplus()" class="resource">RESOURCE&nbsp;+</a>
+           <div class="resource-link-container">
+             <a  class="resource-link">Industrial Area Opearating Process</a>
+             <a  class="resource-link">Office Order</a>
+             <a class="resource-link">Operating Manual 2011</a>
+             <a  class="resource-link">Document For Approval of Building Plan</a>
+             <a  class="resource-link">Present Rates</a>
+             <a href="RESOURCE-CENTER/DEVELOPMENT PROCESS/index.html" class="resource-link">Development Process</a>
+             <a  class="resource-link">Conditions for Tender</a>
+             <a  class="resource-link">Allotment Application Form</a>
+             <a  class="resource-link">Service Rules</a>
+             <a  class="resource-link">By Laws Of UPSIDA</a>
+             <a  class="resource-link">Ammendment in UPSIDA Land Development & Building Regulation 2018</a>
+             <a  class="resource-link">Second Ammendment in UPSIDA Land Development</a>
+           </div>
+           </div>
+          </li>
+          <li class="nav-link-list">
+            <div class="contact-dropdown">
+              <a onmouseover="contactchangeintominus()" onmouseout="contactchangeintoplus()" class="contact">CONTACT&nbsp;+</a>
+              <div class="contact-link-container">
+                <a href="CONTACT/HEADOFFICE/index.html" class="contact-link">Head Office</a>
+                <a href="" class="contact-link">Regional / Project Office</a>
+                <a href="" class="contact-link">Divisonal Office</a>
+                
+              </div>
+              </div>
+          </li>
+
+          <li class="ham-burger-menu" onclick="openNav()">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-bar-small-device" id="small-menu">
+        <div class="small-off-webmail-container">
+          <a href="http://webmail.upsidc.com/" class="popup-webmail">WEBMAIL</a>
+          <a href="https://www.onlineupsidc.com/OfficeUsers/Login.aspx" class="popup-off-login">
+            OFFICE
+            LOGIN
+          </a>
+        </div>
+        <hr />
+
+        <div class="link-container">
+          <ul class="unordered-small-menu-bar">
+            <li>
+              <a href="#" class="nav-link-small">HOME</a>
+            </li>
+            <hr />
+            <li>
+              <a href="ABOUT PAGE/index.html" class="nav-link-small">ABOUT</a>
+            </li>
+            <hr />
+            <li>
+              <a href="E-SERVICES/index.html" class="nav-link-small">E-SERVICES</a>
+            </li>
+            <hr />
+            <li>
+              <a href="POLICIES/index.html" class="nav-link-small">POLICIES</a>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="contact-text">RESOURCE CENTER &nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkresource()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-resource">
+                <li class="nested-list">
+                  <a class="nav-link-small-nested">Industrial Area Opearating Process</a>
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Office Orders</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested" >Operating Manual 2011 </a>
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Document For Approval of Building Plan</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Present Rates</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a href="RESOURCE-CENTER/DEVELOPMENT PROCESS/index.html" class="nav-link-small-nested"
+                    >Development Process</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Conditions for Tender</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Allotment Application Form</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a class="nav-link-small-nested"
+                    >Service Rules</a
+                  >
+                </li>
+               
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >By Laws Of UPSIDA</a
+                  >
+                  <li class="nested-list">
+                    <a  target="_blank"
+                      >Ammendment in UPSIDA Land Development & Building Regulation 2018</a
+                    >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >Second Ammendment in UPSIDA Land Development</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="contact-text">CONTACT US &nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkcontact()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-contact">
+                <li class="nested-list">
+                  <a href="CONTACT/HEADOFFICE/index.html" class="nav-link-small-nested">Head office</a>
+                </li>
+                <li class="nested-list">
+                  <a href="" class="nav-link-small-nested"
+                    >Regional / Project Office</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a href="" class="nav-link-small-nested">Divisional Ofiice</a>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li class="drop-down-container">
+              <div class="contact-caret">
+                <a class="imp">IMPORTANT LINKS&nbsp;&nbsp;&nbsp; </a>
+
+                <button
+                  onclick="shownestedlinkimp()"
+                  class="nested-menu-dropdown"
+                >
+                  <i class="fa fa-caret-down fa-1x"></i>
+                </button>
+              </div>
+
+              <ul class="unordered-nested-imp">
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested">Udyog Bandhu</a>
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested"
+                    >U.P. Government Official Website</a
+                  >
+                </li>
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested" target="_blank"
+                    >E-tender Uttar Pradesh</a
+                  >
+                </li>
+
+                <li class="nested-list">
+                  <a  class="nav-link-small-nested" target="_blank"
+                    >Nivesh Mitra</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="running-important">
+        <marquee direction="left" scrollamount="6" id="moving-imp" onmouseover="document.getElementById('moving-imp').stop();"
+        onmouseout="document.getElementById('moving-imp').start();">
+          <i class="fa fa-bullhorn fa-1x" aria-hidden="true"></i>&nbsp;&nbsp;
+          <strong>
+            Expression of Interest (EOI) For Setting up of Hospitals, Schools,
+            Flatted Factories, Warehouses, Industries, Group Housing, Sports
+            Stadium, Golf Course with Club House, 5 Star Hotels or any other
+            Real Estate Project in the Future Smart Cities - Trans Ganga City,
+            Unnao near Kanpur & Saraswati Hi-Tech City, Prayagraj.
+          </strong>
+        </marquee>
+      </div>
+      <div class="intro">
+        <div class="important-link">
+          <a   class="imp-link">APPLY HERE FOR ONLINE SERVICES</a>
+          <a  class="imp-link">TRACK APPLICATION</a>
+          <a   class="imp-link">
+            
+            UPSIDA NEWS LETTER (REVISED)
+          </a>
+          <a class="imp-link">
+            <i class="fa fa-bell fa-1x" aria-hidden="true">&nbsp;NEW</i
+            >&nbsp;&nbsp;INVESTOR GUIDE
+            </a>
+          <a  class="imp-link">
+            APPLICATION FOR WAREHOUSING AND LOGISTICS
+          </a>
+        </div>
+        <div class="card-button-container">
+          <div class="card-container">
+            <div class="photo-info-container fade">
+              <div class="photo-container">
+                <img
+                  src="Images/Header/PHOTOS-INFO/cmnew.jpg"
+                  alt=""
+                  class="photo"
+                />
+              </div>
+              <div class="info">
+                <div class="info-name">
+                  <h3>Shri Yogi Adityanath</h3>
+                </div>
+                <div class="info-detail">
+                  <p>Hon'ble Chief Minister , Uttar Pradesh</p>
+                </div>
+              </div>
+            </div>
+            <div class="photo-info-container fade">
+              <div class="photo-container">
+                <img
+                  src="Images/Header/PHOTOS-INFO/SatishMahan.jpg"
+                  alt=""
+                  class="photo"
+                />
+              </div>
+              <div class="info">
+                <div class="info-name">
+                  <h3>Shri Satish Mahana</h3>
+                </div>
+                <div class="info-detail">
+                  <p>
+                    Cabinet Minister of Industrial Development ,Uttar Pradesh
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="photo-info-container fade">
+              <div class="photo-container">
+                <img
+                  src="Images/Header/PHOTOS-INFO/image22321.jpeg"
+                  alt=""
+                  class="photo"
+                />
+              </div>
+              <div class="info">
+                <div class="info-name">
+                  <h3>Shri Sanjeev Kumar Mittal (IAS)</h3>
+                </div>
+                <div class="info-detail">
+                  <p>IIDC</p>
+                </div>
+              </div>
+            </div>
+            <div class="photo-info-container fade">
+              <div class="photo-container">
+                <img
+                  src="Images/Header/PHOTOS-INFO/arvin.jpeg"
+                  alt=""
+                  class="photo"
+                />
+              </div>
+              <div class="info">
+                <div class="info-name">
+                  <h3>Shri Arvind Kumar (IAS)</h3>
+                </div>
+                <div class="info-detail">
+                  <p>
+                    Additional Chief Secretary Infrastructure and Industrial
+                    Development Department and Chairman (U.P.S.I.D.A.)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="photo-info-container fade">
+              <div class="photo-container">
+                <img
+                  src="Images/Header/PHOTOS-INFO/upsidamd.jpg"
+                  alt=""
+                  class="photo"
+                />
+              </div>
+              <div class="info">
+                <div class="info-name">
+                  <h3>Shri Mayur Maheshwari (IAS)</h3>
+                </div>
+                <div class="info-detail">
+                  <p>Chief Executive Officer</p>
+                </div>
+              </div>
+            </div>
+            <a class="Btn-shift" id="prevBtn" onclick="plusSlides(-1)"
+              >&#10094;</a
+            >
+            <a class="Btn-shift" id="nextBtn" onclick="plusSlides(+1)"
+              >&#10095;</a
+            >
+          </div>
+          <div class="button-container">
+            <div class="slider" onclick="currentslide(1)"></div>
+            <div class="slider" onclick="currentslide(2)"></div>
+            <div class="slider" onclick="currentslide(3)"></div>
+            <div class="slider" onclick="currentslide(4)"></div>
+            <div class="slider" onclick="currentslide(5)"></div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="content-para">
+            Uttar Pradesh has been a leader in the industrial sector, and we
+            have achieved this position with consistent efforts. We have taken
+            right steps and in effect industries are not just coming to Uttar
+            Pradesh from other states, but huge investments are flowing in from
+            overseas also.
+          </p>
+          <br />
+
+          
+          <p id="display-afterwards">
+            Foreign investors are eager to invest in various sectors in the
+            state after being convinced of the change in culture and ease of
+            doing business. UPSIDA is the nodal agency for developing industrial
+            infrastructure. UPSIDA has been spearheading the industrial
+            promotion in the State and has been instrumental in keeping the
+            State at the numero uno position among the states for several
+            decades now. Till date, UPSIDA has developed a record 154 industrial
+            areas on approximately 43,788.54 acres of land across Uttar Pradesh.
+          </p>
+          <br />
+  
+        </div>
+      </div>
+
+      <div class="promoting-industrial-container">
+        <h1 class="promoting-heading">
+          PROMOTING INDUSTRIAL PROGRESS WITH A PLETHORA OF INVESTOR FRIENDLY
+          REFORMS
+        </h1>
+
+        <div class="card-promotion">
+          <div class="card-promtion-photo" id="card1">
+            <div class="top-heading">
+              <p class="name-project">TRANS GANGA CITY</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(1) "
+              onmouseout="normalthis(1)"
+            >
+              <a class="location">UNNAO</a>
+              <a class="full-address">Trans Ganga City, Unnao</a>
+            </div>
+          </div>
+          <div class="card-promtion-photo" id="card2">
+            <div class="top-heading">
+              <p class="name-project">SARASWATI HI-TECH CITY</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(2) "
+              onmouseout="normalthis(2)"
+            >
+              <a  class="location">ALLAHABAD</a>
+              <a  class="full-address">Saraswati Hi-Tech City, Allahabad</a>
+            </div>
+          </div>
+          <div class="card-promtion-photo" id="card3">
+            <div class="top-heading">
+              <p class="name-project">TRANS DELHI SIGNATURE CITY</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(3) "
+              onmouseout="normalthis(3)"
+            >
+              <a  class="location">GAZIABAD</a>
+              <a  class="full-address">Trans Delhi Signature City, Gaziabad</a>
+            </div>
+          </div>
+          <div class="card-promtion-photo" id="card4">
+            <div class="top-heading">
+              <p class="name-project">PLASTIC CITY</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(4) "
+              onmouseout="normalthis(4)"
+            >
+              <a  class="location">AURAIYA</a>
+              <a  class="full-address">Plastic City, Auraiya</a>
+            </div>
+          </div>
+          <div class="card-promtion-photo" id="card5">
+            <div class="top-heading">
+              <p class="name-project">AKIC</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(5) "
+              onmouseout="normalthis(5)"
+            >
+              <a  class="location">AMRITSAR KOLKATA INDUSTRIAL CORRIDOR</a>
+              <a  class="full-address">Amritsar Kolkata Industrial Corridor</a>
+            </div>
+          </div>
+          <div class="card-promtion-photo" id="card6">
+            <div class="top-heading">
+              <p class="name-project">PERFUME PARK</p>
+            </div>
+            <div
+              class="bottom-heading"
+              onmouseover="
+            changethis(6) "
+              onmouseout="normalthis(6)"
+            >
+              <a  class="location">KANNAUJ</a>
+              <a  class="full-address">Perfume Park, Kannauj</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="upsida-news-tender-newsletter-container">
+      <div class="upsidanews-tender-container">
+        <div class="newst-heading">
+          <h1 class="news-head">NEWS AND TENDERS</h1>
+        </div>
+        <div class="newsndtender">
+          <div class="paus-play">
+            <button id="pauseBtn" onclick="changepausebutton()">
+              <i class="fa fa-pause" aria-hidden="true"></i>
+            </button>
+            <button id="playbtn" onclick="changeplaybutton()">
+              <i class="fa fa-play" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="news-container">
+            <marquee
+              scrollamount="6"
+              direction="up"
+              class="newsndtender"
+              id="moving-tag"
+              height="200"
+              ;
+              onmouseover="document.getElementById('moving-tag').stop();"
+              onmouseout="document.getElementById('moving-tag').start();"
+            >
+              <div class="tender-container">
+                <p class="tender-title">
+                  Notice for Dismentling of defective damage and old wiring &
+                  re-electrification of Regional Office Building, Kasna
+                  District, GB Nagar.
+                </p>
+
+                <br />
+                <a  class="read-more-link">Read More...</a>
+                <br />
+                <br />
+                <p class="date">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Date : 18/01/2021
+                </p>
+              </div>
+
+              <div class="tender-container">
+                <p class="tender-title">
+                  Notice for Dismentling of defective damage and old wiring &
+                  re-electrification of Regional Office Building, Kasna
+                  District, GB Nagar.
+                </p>
+
+                <br />
+                <a  class="read-more-link">Read More...</a>
+                <br />
+                <br />
+                <p class="date">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Date : 18/01/2021
+                </p>
+              </div>
+
+              <div class="tender-container">
+                <p class="tender-title">
+                  Notice for Dismentling of defective damage and old wiring &
+                  re-electrification of Regional Office Building, Kasna
+                  District, GB Nagar.
+                </p>
+
+                <br />
+                <a  class="read-more-link">Read More...</a>
+                <br />
+                <br />
+                <p class="date">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Date : 18/01/2021
+                </p>
+              </div>
+
+              <div class="tender-container">
+                <p class="tender-title">
+                  Notice for Dismentling of defective damage and old wiring &
+                  re-electrification of Regional Office Building, Kasna
+                  District, GB Nagar.
+                </p>
+
+                <br />
+                <a  class="read-more-link">Read More...</a>
+                <br />
+                <br />
+                <p class="date">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Date : 18/01/2021
+                </p>
+              </div>
+
+              <div class="tender-container">
+                <p class="tender-title">
+                  Notice for Dismentling of defective damage and old wiring &
+                  re-electrification of Regional Office Building, Kasna
+                  District, GB Nagar.
+                </p>
+
+                <br />
+                <a href="#" class="read-more-link">Read More...</a>
+                <br />
+                <br />
+                <p class="date">
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Date : 18/01/2021
+                </p>
+              </div>
+            </marquee>
+          </div>
+        </div>
+      </div>
+
+      <div class="upsida-newsletter-container">
+        <div class="newsletter-heading-container">
+          <h1 class="newsletter-heading">UPSIDA NEWS LETTER</h1>
+        </div>
+        <div class="news-letter-container">
+          <div class="newsletter">
+            <div class="photo-newsletter-container">
+              <img
+                class="newletter-photo"
+                src="Images/Header/newsletter/Screenshot (146).png"
+              />
+            </div>
+            <div class="info-newsletter-container">
+              <a  class="news-llink" target="_blank">NEWS LETTER (EDITION - I)</a>
+              <p class="date-news">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;&nbsp;
+                01/07/2020
+              </p>
+            </div>
+          </div>
+          <div class="newsletter">
+            <div class="photo-newsletter-container">
+              <img
+                class="newletter-photo"
+                src="Images/Header/newsletter/Screenshot (147).png"
+              />
+            </div>
+            <div class="info-newsletter-container">
+              <a  class="news-llink" target="_blank">NEWS LETTER (EDITION - II)</a>
+              <p class="date-news">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i
+                >&nbsp;&nbsp;15/09/2020
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      
+    </main>
+
+
+    <div class ="related-videos-container">
+      <div class="vdo-heading-container">
+        <h1 class="heading-vdo">
+          RELATED VIDEOS
+        </h1>
+      </div>
+
+      <div class="video-container">
+        <div class="video-inner">
+        <iframe class="vdo" width="709" height="390" src="https://www.youtube.com/embed/Gta1wI_pwEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-inner">
+        <iframe class="vdo" width="709" height="399" src="https://www.youtube.com/embed/7cCZ_UJVBZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="social-container">
+      <h3 class="social-heading">FOLLOW US</h3>
+      <div class="social-media-icon-container">
+        <div class="facebook-icon">
+         <a  class="f"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div class="twitter-icon">
+        <a  class="t"><i class="fa fa-twitter fa-2x" aria-hidden="true" ></i></a>
+        </div>
+      </div>
+    </div>
+
+
+ 
+    <footer>
+      <div class="topic-container">
+        <h1 class="foot-topic-heading">IMPORTANT LINKS</h1>
+        <ul>
+          <li class="foot-list">
+            <a class="foot-topic-link" 
+              >U.P Government Official Website</a
+            >
+          </li>
+          <li class="foot-list">
+            <a class="foot-topic-link" >Udyog Bandhu</a>
+          </li>
+          <li class="foot-list">
+            <a class="foot-topic-link" >E-Tender Uttar Pradesh</a>
+          </li>
+          <li class="foot-list">
+            <a class="foot-topic-link" 
+              >Nivesh Mitra</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="foot-container">
+     
+<br/>
+<p class="credit"> Content © UPSIDA, U.P., India.
+</p>
+<br/>
+<p style="color: red" class="credit">
+  This is a <em>mockup</em> website of UPSIDA which was redesigned
+  during the design-a-thon organised by UPSIDA from 7/07/2021 -
+  8/08/2021.
+</p>
+
+
+</div>
+    </footer>
+
+    <script src="Script/script.js"></script>
+  </body>
+</html>
