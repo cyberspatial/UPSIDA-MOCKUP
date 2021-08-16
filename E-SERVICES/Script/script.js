@@ -1,5 +1,9 @@
 
-  
+  function updatetime()
+{
+    const d = new Date();
+document.getElementsByClassName("time")[0].innerHTML = d;
+}
    
 function openNav()
 {
