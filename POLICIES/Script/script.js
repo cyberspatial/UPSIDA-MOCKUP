@@ -1,10 +1,9 @@
-
-  
-   function updatetime()
+function updatetime()
 {
     const d = new Date();
 document.getElementsByClassName("time")[0].innerHTML = d;
 }
+setInterval(updatetime,1000);
 
 
 function openNav()
